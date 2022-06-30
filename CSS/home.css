@@ -39,36 +39,41 @@ body {
 }
 #mainPage h2 {
     color: lightgray;
-    font-size: 26px;
+    font-size: 30px;
     margin: 0;
 }
 #mainPage h1 {
     color: white;
     margin: 0;
+    font-size: 40px;
 }
 #left {
     float: left;
-    width: fit-content;
-    margin-top: 10%;
+    width: 30%;
+    height: 40vh;
+    margin-top: 30vh;
+    margin-bottom: 30vh;
     margin-left: 20%;
-    height: max-content;
 }
 #left h2, h1{
     width: max-content;
+    margin-top: 30%;
 }
-.right {
+#right {
     float: right;
     max-width: 30%;
     margin-right: 20%;
+    height: 40vh;
+    margin-top: 30vh;
+    margin-bottom: 30vh;
 }
 #profilePic {
     float: right;
-    margin: 30px;
+    margin: 20px;
     min-width: 20%;
-    max-width: 50%;
+    max-width: 70%;
     height: auto;
     border-radius: 20px;
-    margin-top: 50px;
 }
 
 .footer {
