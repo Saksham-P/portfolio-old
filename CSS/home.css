@@ -7,6 +7,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     position: fixed;
+    z-index: 1;
 }
 .header a {
     float: left;
@@ -26,16 +27,73 @@ body {
     color: gold;
 }
 .header a:hover {
-    background-color: rgb(51, 51, 51);
+    background-color: rgba(51, 51, 51, 0.5);
 }
 #mainPage {
     background-color: black;
     overflow: hidden;
+    background-image: url("../Images/pattern1Cropped.jpg");
+    background-size: 90%;
+    width: 100%;
+    height: 100vh;
+}
+#mainPage h2 {
+    color: lightgray;
+    font-size: 26px;
+    margin: 0;
+}
+#mainPage h1 {
+    color: white;
+    margin: 0;
+}
+#left {
+    float: left;
+    width: fit-content;
+    margin-top: 10%;
+    margin-left: 20%;
+    height: max-content;
+}
+#left h2, h1{
+    width: max-content;
+}
+.right {
+    float: right;
+    max-width: 30%;
+    margin-right: 20%;
 }
 #profilePic {
     float: right;
-    opacity: .5;
-    padding-right: 10px;
+    margin: 30px;
+    min-width: 20%;
     max-width: 50%;
     height: auto;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.footer {
+    background-color: grey;
+    overflow: hidden;
+    height: auto;
+}
+.form {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form h2, form {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.input {
+    border: none;
+    background-color: transparent;
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+    margin: 10px 0;
+}
+.input::placeholder {
+    color: rgb(24, 24, 24);
 }
