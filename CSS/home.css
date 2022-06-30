@@ -4,14 +4,14 @@ body {
 }
 .header {
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #02242c77;
     width: 100%;
     position: fixed;
     z-index: 1;
 }
 .header a {
     float: left;
-    color: beige;
+    color: #9893da;
     text-align: center;
     padding: 10px 50px;
     margin: 0px 20px;
@@ -24,7 +24,7 @@ body {
     float: right;
 }
 .header a.activePage {
-    color: gold;
+    color: #ddfcad;
 }
 .header a:hover {
     background-color: rgba(51, 51, 51, 0.5);
@@ -38,12 +38,12 @@ body {
     height: 100vh;
 }
 #mainPage h2 {
-    color: lightgray;
+    color: #9893da;
     font-size: 30px;
     margin: 0;
 }
 #mainPage h1 {
-    color: white;
+    color: #bbbdf6;
     margin: 0;
     font-size: 40px;
 }

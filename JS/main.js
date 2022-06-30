@@ -8,8 +8,8 @@ function parallax(e) {
     let windowHeight = window.innerHeight/2;
     let mouseX = e.clientX;
     let mouseY = e.clientY;
-    let backgroundX = `${50 - (mouseX - windowWidth) * 0.02}% `;
-    let backgroundY = `${50 - (mouseY - windowHeight) * 0.05}%`;
+    let backgroundX = `${0 - (mouseX - windowWidth) * 0.02}% `;
+    let backgroundY = `${0 - (mouseY - windowHeight) * 0.05}%`;
     let foregroundX = `${0 - (mouseX - windowWidth) * 0.01}%`;
     let foregroundY = `${0 - (mouseY - windowHeight) * 0.03}%`;
     let x = `${backgroundX}`;
