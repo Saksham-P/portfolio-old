@@ -29,7 +29,6 @@ function showInterests() {
     const interval = setInterval(function(){
         if (interestText.style.getPropertyValue('--dynamic-width') != '100%') {
             interestText.style.setProperty('--dynamic-width', `${k}%`);
-            console.log(interestText.style.getPropertyValue('--dynamic-width'));
             k++;
         }
         else {
