@@ -2,6 +2,8 @@ document.addEventListener("mousemove", parallax);
 const elem = document.getElementById("mainPage");
 const elem1 = document.getElementById("left");
 
+const interestText = document.getElementById("interests");
+const interestList = ["Web Development", "Game Development", "Software Development"];
 
 function parallax(e) {
     let windowWidth = window.innerWidth/2;
@@ -20,4 +22,30 @@ function parallax(e) {
     elem.style.backgroundPositionX = x;
     elem.style.backgroundPositionY = y;
     elem1.style.transform = `translateX(${x1}) translateY(${y1})`;
+}
+
+function showInterests() {
+    let k = 1;
+    const interval = setInterval(function(){
+        if (interestText.style.getPropertyValue('--dynamic-width') != '100%') {
+            interestText.style.setProperty('--dynamic-width', `${k}%`);
+            console.log(interestText.style.getPropertyValue('--dynamic-width'));
+            k++;
+        }
+        else {
+            k = 1;
+            interestText.style.setProperty('--dynamic-width', `${k}%`);
+            for (let i = 0; i < interestList.length; i++) {
+                if (interestText.textContent == interestList[i]) {
+                    if (i < interestList.length-1) {
+                        interestText.textContent = interestList[i+1];
+                    }
+                    else {
+                        interestText.textContent = interestList[0];
+                    }
+                    break;
+                }
+            }
+        }
+    },30);
 }
