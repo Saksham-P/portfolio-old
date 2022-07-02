@@ -21,13 +21,14 @@ body::-webkit-scrollbar-thumb:hover {
     width: 100%;
     position: fixed;
     z-index: 1;
+    top: 0;
 }
 .header a {
     float: left;
     color: #9893da;
     text-align: center;
-    padding: 10px 50px;
-    margin: 0px 20px;
+    padding: 1.5vh 2vw;
+    margin: 0px 3vw;
     text-decoration: none;
     font-size: 16px;
     line-height: 25px;
@@ -109,14 +110,11 @@ body::-webkit-scrollbar-thumb:hover {
     height: auto;
     border-radius: 20px;
 }
-
 .footer {
     background-color: #02242c;
     height: 90vh;
 }
 .form {
-    width: auto;
-    height: fit-content;
     margin: 10vh;
 }
 .form h2, form {
