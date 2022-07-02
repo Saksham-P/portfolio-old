@@ -4,6 +4,7 @@ const elem1 = document.getElementById("left");
 
 const interestText = document.getElementById("interests");
 const interestList = ["Web Development", "Game Development", "Software Development"];
+const interestLinks = [""];
 
 function parallax(e) {
     let windowWidth = window.innerWidth/2;

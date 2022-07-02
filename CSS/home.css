@@ -6,6 +6,15 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #02242c;
 }
+body::-webkit-scrollbar {
+    width: 12px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #9893da;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #7673a5;
+}
 .header {
     overflow: hidden;
     background-color: #02242c77;
@@ -39,8 +48,7 @@ body {
     overflow: hidden;
     background-image: url("../Images/pattern1Cropped.jpg");
     background-size: 90%;
-    /*-webkit-mask-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
-    */width: 100%;
+    width: 100%;
     height: 100vh;
 }
 #mainPage h3 {
@@ -104,27 +112,106 @@ body {
 
 .footer {
     background-color: #02242c;
-    overflow: hidden;
-    height: 100vh;
+    height: 90vh;
 }
 .form {
-    width: 200px;
-    margin-left: auto;
-    margin-right: auto;
+    width: auto;
+    height: fit-content;
+    margin: 10vh;
 }
 .form h2, form {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    color: #ddfcad;
+}
+.form h2 {
+    border-bottom: 3px solid #9893da;
+    margin-bottom: 10%;
+}
+#leftFooter {
+    float: left;
+    width: 50%;
+    height: 100%;
+    margin-top: 5vh;
+}
+#leftFooter ul {
+    list-style: none;
+    display: inline;
+    float: left;
+    margin: none;
+}
+#leftFooter li {
+    margin-top: 2vh;
+    margin-bottom: 14vh;
+    padding-right: 5vw;
+}
+#leftFooter a {
+    border-bottom: 1px solid #9893da;
+    text-decoration: none;
+    color: #9893da;
+}
+#rightFooter {
+    float: right;
+    width: 50%;
+    margin-top: 5vh;
+}
+#rightFooter form {
+    display: block;
 }
 .input {
     border: none;
     background-color: transparent;
-    color: white;
-    border-radius: 3px;
-    text-align: center;
-    margin: 10px 0;
+    color: #9893da;
+    padding-top: 4%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    border-radius: 1px;
+    margin-bottom: 4%;
+    border-bottom: 2px solid #9893da;
+    display: block;
+    width: 30vw;
+    font-size: 16px;
 }
 .input::placeholder {
-    color: rgb(24, 24, 24);
+    color: #9893da;
+}
+.input:focus {
+    outline: #9893da;
+    box-shadow: 0 0 4px 1px #9893da;
+}
+#messageArea {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 80px;
+    resize: vertical;
+}
+#messageArea::-webkit-scrollbar {
+    width: 16px;
+}
+#messageArea::-webkit-scrollbar-thumb {
+    background-color: #9893da;
+}
+#messageArea::-webkit-scrollbar-thumb:hover {
+    background-color: #7673a5;
+}
+.button {
+    background-color: #9893da;
+    color: #ddfcad;
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 30%;
+    font-size: 16px;
+    font-weight: 700;
+}
+.button:hover {
+    cursor: pointer;
+    background-color: #7673a5;
+}
+.button:active {
+    border: #ddfcad;
+    box-shadow: 0 0 4px 1px #9893da;
 }

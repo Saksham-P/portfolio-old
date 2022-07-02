@@ -9,7 +9,7 @@
     <body onload="showInterests()">
         <header>
             <div class="header">
-                <a class="activePage" href="#mainPage">Home</a>
+                <a class="activePage" href="index.html">Home</a>
                 <a href="#Experience">Experience</a>
                 <a href="#Projects">Projects</a>
                 <a href="#Education">Education</a>
@@ -33,11 +33,35 @@
         <footer>
             <div class="footer">
                 <div class="form" id="Contact">
-                    <h2>Get In Touch</h2>
-                    <form>
-                        <input class="input" type="text" name="name" placeholder="Your Name">
-                        <input class="input" type="text" name="email" placeholder="Your email">
-                    </form>
+                    <div id="leftFooter">
+                        <ul>
+                            <li><a href="#">Experience 1</a></li>
+                            <li><a>Experience 2</a></li>
+                            <li><a>Experience 3</a></li>
+                            <li><a>Experience 4</a></li>
+                        </ul>
+                        <ul>
+                            <li><a>Projects 1</a></li>
+                            <li><a>Projects 2</a></li>
+                            <li><a>Projects 3</a></li>
+                            <li><a>Projects 4</a></li>
+                        </ul>
+                        <ul>
+                            <li><a>Education 1</a></li>
+                            <li><a>Education 2</a></li>
+                            <li><a>Education 3</a></li>
+                            <li><a>Education 4</a></li>
+                        </ul>
+                    </div>
+                    <div id="rightFooter">
+                        <h2>Get In Touch</h2>
+                        <form>
+                            <input class="input" type="text" name="name" placeholder="Your Name">
+                            <input class="input" type="text" name="email" placeholder="Email Adress">
+                            <textarea id="messageArea" class="input" name="message" placeholder="Your Message"></textarea>
+                            <button class="button" type="button">Send</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </footer>
