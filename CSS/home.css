@@ -112,7 +112,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .footer {
     background-color: #02242c;
-    height: 90vh;
+    height: 78vh;
 }
 .form {
     margin: 10vh;
@@ -212,4 +212,29 @@ body::-webkit-scrollbar-thumb:hover {
 .button:active {
     border: #ddfcad;
     box-shadow: 0 0 4px 1px #9893da;
+}
+#midFooter {
+    height: 10vh;
+    margin-bottom: 2vh;
+    float: left;
+}
+#LIlogo {
+    float: left;
+    width: auto;
+    height: 4vw;
+    margin-left: 41vw;
+    margin-right: 4vw;
+}
+#LIlogo:hover {
+    filter:brightness(1.5)
+}
+#GITlogo {
+    float: right;
+    width: auto;
+    height: 4vw;
+    margin-right: 41vw;
+    margin-left: 3vw;
+}
+#GITlogo:hover {
+    filter: invert();
 }
