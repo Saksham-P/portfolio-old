@@ -112,7 +112,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .footer {
     background-color: #02242c;
-    height: 78vh;
+    height: 79vh;
 }
 .form {
     margin: 10vh;
@@ -215,7 +215,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 #midFooter {
     height: 10vh;
-    margin-bottom: 2vh;
+    margin-bottom: 1vh;
     float: left;
 }
 #LIlogo {
@@ -237,4 +237,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 #GITlogo:hover {
     filter: invert();
+    border-radius: 4vw;
+    box-shadow: 0 0 3px 2px #7673a5;
 }

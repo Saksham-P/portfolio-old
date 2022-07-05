@@ -47,5 +47,5 @@ function showInterests() {
                 }
             }
         }
-    },30);
+    },40);
 }
