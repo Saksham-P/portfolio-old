@@ -83,6 +83,7 @@ body::-webkit-scrollbar-thumb:hover {
 #interests{
     color: #ddfcad;
     position: relative;
+    text-decoration: none;
     --dynamic-width: 0%;
 }
 #interests::before {
@@ -109,6 +110,57 @@ body::-webkit-scrollbar-thumb:hover {
     max-width: 70%;
     height: auto;
     border-radius: 20px;
+}
+#educationMain {
+    width: 99vw;
+    height: 100vh;
+    margin: none;
+}
+#leftEduMain {
+    width: 40vw;
+    height: 100vh;
+    float: left;
+    margin: none;
+}
+#NM {
+    height: 100vh;
+    width: auto;
+}
+#rightEduMain {
+    width: 40vw;
+    height: 100vh;
+    margin-right: 10vw;
+    float: right;
+    text-align: center;
+}
+#rightEduMain h1{
+    margin-top: 45vh;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    color: #9893da;
+}
+#rightEduMain h3 {
+    color: #ddfcad;
+    margin-top: -1vh;
+}
+#formalEdu {
+    background-color: #010e11;
+    width: 99vw;
+    height: 100vh;
+    background-image: url("../Images/Uni.jpg");
+    background: linear-gradient(90deg, #02242c00 0%, #02242c 80%, #02242c 170%), url('../Images/uni.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#formalTitle {
+    font-size: 30px;
+    color: #9893da;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+.stick {
+    position: fixed;
 }
 .footer {
     background-color: #02242c;
