@@ -156,11 +156,43 @@ body::-webkit-scrollbar-thumb:hover {
 #formalTitle {
     font-size: 30px;
     color: #9893da;
-    margin: 0 auto;
+    width: 99vw;
+    text-align: center;
+    margin: 0;
     padding-top: 60px;
 }
-.stick {
+.sticky {
     position: fixed;
+    top: 0;
+    width: 99vw;
+    text-align: center;
+}
+.schoolInfo {
+    text-align: right;
+    width: auto;
+    padding-top: 0;
+    padding-right: 4vw;
+    color: #ddfcad;
+}
+.schoolInfo h2, h4 {
+    color: #7673a5;
+}
+#formalEdu2 {
+    background-color: #010e11;
+    width: 99vw;
+    height: 100vh;
+    background-image: url("../Images/nelson2.jpg");
+    background: linear-gradient(90deg, #02242c00 0%, #02242c 80%, #02242c 170%), url('../Images/nelson2.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#formalTitle2 {
+    font-size: 30px;
+    color: #9893da;
+    width: 99vw;
+    text-align: center;
+    margin: 0;
+    padding-top: 60px;
 }
 .footer {
     background-color: #02242c;

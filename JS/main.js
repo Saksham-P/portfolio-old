@@ -56,6 +56,40 @@ function showInterests() {
     },40);
 }
 
+var text = document.getElementById("formalTitle");
+var info = document.getElementsByClassName("schoolInfo")[0];
+var text2 = document.getElementById("formalTitle2");
+var sticky = text.offsetTop;
+var unsticky = text2.offsetTop;
+
+var distanceY = 0;
+
+window.onscroll = function() {
+    if (window.scrollY >= sticky && window.scrollY < unsticky) {
+        if (distanceY == 0) {
+            distanceY = window.scrollY;
+        }
+        text.style.setProperty("padding-top", `${60}px`);
+        text.style.setProperty("visibility", `visible`);
+        text2.style.setProperty("visibility", `hidden`);
+        info.style.setProperty("padding-top", `${text.clientHeight}px`);
+        text.classList.add("sticky");
+    }
+    else if (window.scrollY >= unsticky) {
+        text.style.setProperty("visibility", `hidden`);
+        text2.style.setProperty("visibility", `visible`);
+        // console.debug("i");
+        // info.style.setProperty("padding-top", `${text.clientHeight}px`);
+        // distanceY = window.scrollY - distanceY;
+        // distanceY += 60;
+        // text.classList.remove("sticky");
+        // text.style.setProperty("padding-top", `${distanceY}px`);
+    }
+    else {
+        info.style.setProperty("padding-top", `${0}px`);
+        text.classList.remove("sticky");
+    }
+}
 
 // const divList = ["educationMain", "formalEdu", "onlineEdu", "Contact"]
 // var scrollable = false;
